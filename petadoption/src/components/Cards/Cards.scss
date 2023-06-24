@@ -1,0 +1,39 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    
+    &__card {
+        height: 25rem;
+        width: 16.663rem;
+        border: 0.063rem rgba(0,0,0,0.2);
+        border-radius: 0.313rem;
+        box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.2);
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__card:hover {
+        transform: scale(1.01);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        position: absolute;
+        top: 20.625rem;
+        left: 9.375rem;
+        z-index: 10;
+    }
+
+    &__image {
+        height: 25rem;
+        transition: background-color 0.5s;
+    }
+
+    &__image:hover {
+        background-color: #FEFAF5;
+        opacity: 0.8;
+    }
+}
